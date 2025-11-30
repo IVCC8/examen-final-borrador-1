@@ -1,0 +1,42 @@
+body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #F3E17E;
+            color: #332A14;
+            overflow-x: hidden;
+        }
+
+        /* Parallax & Glass Effects */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+
+        .glass-dark {
+            background: rgba(51, 42, 20, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+        }
+
+
+        .nav-link:hover {
+            color: #85410D;
+            text-decoration: underline;
+            text-decoration-color: #EBA93F;
+            text-underline-offset: 4px;
+        }

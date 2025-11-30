@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Fundación Vida con DUI</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dui-yellow': '#F3E17E', 'dui-gold': '#C4881B', 'dui-brown': '#85410D',
+                        'dui-sand': '#CFA65D', 'dui-pale': '#C2DCD0', 'dui-teal': '#3696A0',
+                        'dui-dark': '#332A14', 'dui-orange': '#EBA93F', 'dui-sage': '#6F8A85',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #F3E17E;
+            overflow-x: hidden;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen text-dui-dark">
+
+    <!-- Navbar Consistente -->
+    <header class="glass sticky top-0 z-50 p-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8 bg-dui-orange rounded-full flex items-center justify-center text-white text-sm">V
+                </div>
+                Vida con DUI
+            </a>
+            <nav class="hidden md:flex space-x-6 font-semibold">
+                <a href="index.html" class="hover:text-dui-orange transition">Inicio</a>
+                <a href="donar.html" class="hover:text-dui-orange transition">Donar</a>
+                <a href="contacto.html" class="hover:text-dui-orange transition">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro Parallax -->
+        <section class="parallax h-[400px] flex items-center justify-center relative"
+            style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="absolute inset-0 bg-dui-brown opacity-50"></div>
+            <div class="relative z-10 text-center text-white" data-aos="zoom-in">
+                <h1 class="text-5xl font-bold mb-4">El Corazón de la Fundación</h1>
+                <p class="text-xl max-w-2xl mx-auto bg-dui-dark bg-opacity-30 p-4 rounded-xl backdrop-blur-sm">Personas
+                    ordinarias logrando cambios extraordinarios.</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-16">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-dui-brown mb-6">Nuestro Equipo</h2>
+                <p class="text-lg text-dui-dark">Somos un equipo multidisciplinario unido por una pasión: garantizar que
+                    cada niño tenga la oportunidad de brillar.</p>
+            </div>
+
+            <!-- GRID DE EQUIPO -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Fundadora 1 -->
+                <div class="glass-card overflow-hidden" data-aos="fade-up">
+                    <img src="./img/Imagen-de-WhatsApp-2025-11-30-a-las-00.22.38_be9904ae.webp"
+                        class="w-full h-64 object-cover object-top filter sepia-[0.3]">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dui-brown">Ian Vadim Cortes Campos</h3>
+                        <p class="text-xs font-bold text-dui-teal uppercase tracking-wider mb-2">Director Ejecutivo</p>
+                        <p class="text-sm text-dui-dark opacity-80">15 años transformando el sistema de asistencia
+                            social.</p>
+                    </div>
+                </div>
+
+                <!-- Fundador 2 -->
+                <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./img/Imagen-de-WhatsApp-2025-11-30-a-las-00.22.38_b8ad28b3.webp"
+                        class="w-full h-64 object-cover object-top filter sepia-[0.3]">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dui-brown">Juan Emiliano Corona Peña</h3>
+                        <p class="text-xs font-bold text-dui-teal uppercase tracking-wider mb-2">Infraestructura</p>
+                        <p class="text-sm text-dui-dark opacity-80">Diseña espacios dignos que fomentan la sanación.</p>
+                    </div>
+                </div>
+
+                <!-- Nuevo Miembro 1 -->
+                <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./img/Captura-de-pantalla-2025-11-23-212817.webp"
+                        class="w-full h-64 object-cover object-top filter sepia-[0.3]">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dui-brown">Carlo Samir Correa Palacios</h3>
+                        <p class="text-xs font-bold text-dui-teal uppercase tracking-wider mb-2">Salud Mental</p>
+                        <p class="text-sm text-dui-dark opacity-80">Lidera el programa de trauma y apego.</p>
+                    </div>
+                </div>
+
+                <!-- Nuevo Miembro 2 -->
+                <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./img/Captura-de-pantalla-2025-11-30-002323 (1).webp"
+                        class="w-full h-64 object-cover object-top filter sepia-[0.3]">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dui-brown">Leonardo Gallegos Estrada</h3>
+                        <p class="text-xs font-bold text-dui-teal uppercase tracking-wider mb-2">Finanzas</p>
+                        <p class="text-sm text-dui-dark opacity-80">Garantiza la transparencia de cada donación.</p>
+                    </div>
+                </div>
+
+                <!-- Nuevo Miembro 3 -->
+                <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <img src="./img/Imagen-de-WhatsApp-2025-11-30-a-las-00.35.09_6e898ec2.webp"
+                        class="w-full h-64 object-cover object-top filter sepia-[0.3]">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dui-brown">Cynthia Suarez Cervantes</h3>
+                        <p class="text-xs font-bold text-dui-teal uppercase tracking-wider mb-2">Educación</p>
+                        <p class="text-sm text-dui-dark opacity-80">Coordina becas y capacitación técnica.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Join Us -->
+                <div class="glass-card flex flex-col items-center justify-center p-6 text-center border-dashed border-2 border-dui-gold cursor-pointer hover:bg-dui-sand hover:bg-opacity-20 transition"
+                    onclick="window.location.href='bolsa-trabajo.html'" data-aos="zoom-in" data-aos-delay="500">
+                    <div
+                        class="w-16 h-16 bg-dui-orange rounded-full flex items-center justify-center mb-4 text-3xl text-white">
+                        +</div>
+                    <h3 class="text-xl font-bold text-dui-dark">Únete al Equipo</h3>
+                    <p class="text-sm text-dui-brown mt-2">¿Tienes vocación de servicio? Revisa nuestra bolsa de
+                        trabajo.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-8 text-center border-t-8 border-dui-gold">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
